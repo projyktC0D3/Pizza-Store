@@ -1,0 +1,126 @@
+#HOME {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(236, 180, 39);
+}
+#HOME, #header, h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+.front {
+    padding: 5;
+    padding-top: 15;
+    width: 48%;
+    height: 66%;
+}
+.counter {
+    padding: 5;
+    padding-top: 15;
+    width: 48%;
+    height: 66%;
+}
+.sub {
+    padding-right: 7;
+    width: 39%;
+    height: 48%;
+}
+.pizza {
+    padding-right: 7;
+    width: 26%;
+    height: 48%;
+}
+.wings {
+    width: 31%;
+    height: 48%;
+}
+
+#MENU {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(236, 180, 39);
+}
+#MENU, #header, h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+#menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 95%;
+    margin: 20px auto;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+#p1zza,
+#meatball,
+#wing2,
+#bread {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    gap: 25px;
+    margin: 0;
+}
+#p1zza img,
+#meatball img,
+#wing2 img,
+#bread img {
+    width: 300px;
+    height: auto;
+}
+#wing2 img,
+#bread img {
+    transform: rotate(-90deg);
+}
+#p1zza figcaption,
+#meatball figcaption,
+#wing2 figcaption,
+#bread figcaption {
+    text-align: left;
+}
+#wing2 figcaption,
+#bread figcaption {
+    margin-left: 50px;
+}
+.menu {
+    padding-top: 15;
+    width: 55%;
+    height: auto;
+}
+
+#CONTACT {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(236, 180, 39);
+}
+#CONTACT, #header, h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+.number {
+    padding: 15px;
+    display: block;
+    margin-bottom: auto;
+    pointer-events: none;
+    cursor: default;
+    color: inherit;
+    text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+    .number {
+        pointer-events: auto;
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+    }
+}
+.location {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
