@@ -202,7 +202,6 @@ html, body {
     }
     #menu-items {
         flex-direction: column;
-        align-items: center;
         gap: 35px;
         width: 100%;
     }
