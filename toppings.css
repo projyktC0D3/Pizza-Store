@@ -16,8 +16,21 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-#menu-toggle:checked + .hamburger + .pagelnks {
-    right: 0;
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease;
+    z-index: 998;
+}
+#menu-toggle:checked + .hamburger + .overlay {
+    opacity: 1;
+    visibility: visible;
 }
 .hamburger {
     position: absolute;
@@ -50,7 +63,8 @@ html, body {
     padding: 5px 10px;
     display: block;
 }
-#menu-toggle:checked + .hamburger + .pagelnks {
+#menu-toggle:checked + .hamburger + .overlay + .pagelnks {
+    right: 0;
     display: flex;
 }
 #menu-toggle {
@@ -125,13 +139,24 @@ html, body {
     margin: 15px auto;
     font-size: 18px;
 }
+.number {
+    pointer-events: none;
+    cursor: default;
+    color: inherit;
+    text-decoration: none;
+}
 .location {
     padding-top: 15px;
     display: block;
     margin: 0 auto;
 }
 .dress {
+    display: block;
     padding-bottom: 150px;
+    pointer-events: none;
+    cursor: default;
+    color: inherit;
+    text-decoration: none;
 }
 @media screen and (max-width: 768px) {
     #HOME,
@@ -210,6 +235,10 @@ html, body {
         font-size: 20px;
         text-align: center;
     }
+    .number {
+        pointer-events: auto;
+        cursor: pointer;
+    }
     .location {
         width: 100%;
         max-width: 400px;
@@ -217,5 +246,9 @@ html, body {
     }
     .dress {
         padding-bottom: 50px;
+        pointer-events: auto;
+        cursor: pointer;
+        text-decoration: underline;
+        color: blue;
     }
 }
