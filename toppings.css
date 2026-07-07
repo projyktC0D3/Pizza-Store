@@ -238,6 +238,8 @@ html, body {
     .number {
         pointer-events: auto;
         cursor: pointer;
+        text-decoration: underline;
+        color: blue;
     }
     .location {
         width: 100%;
