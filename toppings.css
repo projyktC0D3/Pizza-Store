@@ -98,6 +98,12 @@ html, body {
     text-align: left;
     font-size: 20px;
 }
+#spdeal {
+    font-size: 0.72em;
+    border: 6px solid black;
+    padding: 10px;
+    display: inline-block;
+}
 #menu-items {
     display: flex;
     flex-wrap: wrap;
@@ -195,6 +201,12 @@ html, body {
         padding: 0;
     }
     #hours {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 18px;
+    }
+    #spdeal {
         display: block;
         text-align: center;
         margin: 20px auto;
