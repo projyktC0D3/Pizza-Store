@@ -206,12 +206,6 @@ html, body {
         margin: 20px auto;
         font-size: 18px;
     }
-    #spdeal {
-        display: block;
-        text-align: center;
-        margin: 20px auto;
-        font-size: 18px;
-    }
     #menu-items {
         flex-direction: column;
         align-items: center;
